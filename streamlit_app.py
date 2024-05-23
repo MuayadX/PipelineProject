@@ -14,8 +14,8 @@ load_dotenv()
 
 # Function to get the connection to the database
 def get_db_connection():
-    DATABASE_URL = os.getenv('DATABASE_URL')
-    #DATABASE_URL = st.secrets["DATABASE_URL"]
+    #DATABASE_URL = os.getenv('DATABASE_URL')
+    DATABASE_URL = st.secrets["DATABASE_URL"]
     engine = create_engine(DATABASE_URL)
     
     return engine

@@ -2,11 +2,11 @@ import streamlit as st
 from psycopg2 import sql
 from sqlalchemy import create_engine
 import pandas as pd
-from dotenv import load_dotenv
-import os
+#from dotenv import load_dotenv
+#import os
 
 
-load_dotenv()
+#load_dotenv()
 
 # Database connection parameters
 

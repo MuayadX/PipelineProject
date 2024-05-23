@@ -6,7 +6,6 @@ import os
 
 
 # Alpha Vantage API key
-#api_key = 'N5VKMI34VQHKOMU7'
 
 load_dotenv()
 api_key = os.getenv('api_key')

@@ -33,7 +33,9 @@ bitcoin_data = fetch_crypto_data('BTC', 'USD')
 
 #bitcoin_data.to_csv(r'/Users/ms/Desktop/CAB/DataPipeline/New Project/bitcoin_data.csv', index = None, header=True)
  
-
 # Print data
-print("Bitcoin Data (USD):")
-print(bitcoin_data.head())
+#print("Bitcoin Data (USD):")
+#print(bitcoin_data.head())
+
+
+

@@ -37,7 +37,8 @@ def scrape_bitcoin_news():
 
 # Scrape Bitcoin news titles and dates
 bitcoin_news_df = scrape_bitcoin_news()
-print(bitcoin_news_df)
+#bitcoin_news_df.to_csv(r'/Users/ms/Desktop/CAB/DataPipeline/New Project/bitcoin_news_df.csv', index = None, header=True)
+#print(bitcoin_news_df)
 
 # Display DataFrame
 #print("Bitcoin News Titles with Dates:")

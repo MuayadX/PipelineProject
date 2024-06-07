@@ -20,5 +20,9 @@ def scrape_bitcoin_news(event, context):
 
     return {
         "statusCode": 200,
-        "body": json.dumps(news_data)
+        "body": news_data
     }
+    
+    
+    
+    

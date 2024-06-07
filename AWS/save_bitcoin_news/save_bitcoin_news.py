@@ -4,8 +4,9 @@ import os
 
 def save_bitcoin_news(event, context):
     # Parse the body field as JSON
-    news_data = json.loads(event['body'])
-    #news_data = json.loads(event['responsePayload']['body'])
+    #news_data = json.loads(event['body'])
+    #news_data = event['body']
+    news_data = event['responsePayload']['body']
 
     # Database connection parameters from environment variables
     db_port = os.getenv('port')

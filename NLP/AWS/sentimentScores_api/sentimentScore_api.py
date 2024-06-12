@@ -6,18 +6,15 @@ import os
 def sentimentScore_api(event, context):
     model_id = "mrm8488/distilroberta-finetuned-financial-news-sentiment-analysis"
     api_token =  os.getenv('HUGGING_FACE_API_TOKEN')
-
     headers = {"Authorization": f"Bearer {api_token}"}
     API_URL = f"https://api-inference.huggingface.co/models/{model_id}"
     results = []
 
-    # Parse the input JSON
     #data = event['body']
     data = event['responsePayload']['body']
     headlines = [item['title'] for item in data]
-
-    # Initial wait before starting the queries
-    time.sleep(5)
+    
+    time.sleep(5)          # Initial wait before starting the queries
 
     for headline in headlines:
         while True:

@@ -1,6 +1,4 @@
 streamlit
 pandas
 sqlalchemy
-requests
-beautifulsoup4
-psycopg2
+

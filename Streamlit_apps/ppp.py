@@ -36,7 +36,7 @@ btcn_titles2 = fetch_bitcoin_news(conn)
 
 # Display Bitcoin data
 st.title("Bitcoin Data")
-st.line_chart(btcn_data.set_index('date')['volume'])
+st.line_chart(btcn_data.set_index('date')['open'])
 
 # Display Bitcoin news
 st.title("Bitcoin News")

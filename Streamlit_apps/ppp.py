@@ -3,7 +3,7 @@ import pandas as pd
 from sqlalchemy import create_engine
 #from dotenv import load_dotenv
 #import os
-from  psycopg2 import sql
+#from  psycopg2 import sql
 
 # Database connection parameters 
 #load_dotenv()

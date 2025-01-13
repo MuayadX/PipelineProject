@@ -1,7 +1,7 @@
 import streamlit as st
 from sqlalchemy import create_engine
 import pandas as pd
-import psycopg2
+from psycopg2 import sql
 #from dotenv import load_dotenv
 #import os
 
